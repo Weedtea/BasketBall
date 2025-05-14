@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Basketball1.sln"
+    "dotnet.defaultSolution": "BasketBall.sln"
 }
