@@ -7,6 +7,7 @@ TagManager:
   - Nest
   - Egg
   - Ground
+  - Wall
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - Ground
   - Wall
   - bounceMask
-  - 
+  - backGround
   - 
   - 
   - 
@@ -43,4 +44,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: backGround
+    uniqueID: 3573621229
     locked: 0

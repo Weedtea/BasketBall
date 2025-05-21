@@ -10,7 +10,12 @@ public class Nest : MonoBehaviour
     {
         if (other.CompareTag("Egg"))
         {
-            GameManager.Instance.OnEggScored(); // 수정
+            Egg egg = other.GetComponent<Egg>();
+            int bounce = egg != null ? egg.bounceCount : 0;
+            bool touchedNest = egg != null ? egg.touchedNest : false;
+
+            GameManager.Instance.audioSource.PlayOneShot(GameManager.Instance.scoreClip);
+            GameManager.Instance.OnEggScored(bounce, touchedNest);
             Destroy(other.gameObject);
         }
     }
